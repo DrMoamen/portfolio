@@ -34,6 +34,7 @@ nav .brand i{width:16px;height:30px}
 .tools{display:flex;gap:10px;align-items:center}
 /* hero */
 .hero{min-height:100svh;padding-top:120px;display:grid;gap:40px;align-content:center;border:0;position:relative;overflow:hidden}
+.hero h1{font-size:clamp(2.1rem,7vw,6.5rem)}
 .hero h1 span{display:inline-block}
 .hero h1.tw>span{display:inline}
 .hero h1 .u{display:inline}
