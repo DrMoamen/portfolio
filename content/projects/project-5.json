@@ -9,10 +9,7 @@
     "en": "Social media",
     "ar": "سوشيال ميديا"
   },
-  "description": {
-    "en": "Placeholder — edit in the admin.",
-    "ar": "نص مؤقت — عدّله من لوحة الأدمن."
-  },
+  "description": null,
   "cover": "/uploads/Untitled Design.png",
   "images": [
     "/uploads/pasted-image-1794840052718.png",
