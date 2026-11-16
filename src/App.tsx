@@ -5,9 +5,10 @@ import {site,projects,type Project} from './content'
 import {UI} from './ui'
 type Lang='en'|'ar'
 const Arrow=()=><ArrowRight size={16} strokeWidth={2.5}/>
-function Img({src,alt='',cls=''}:{src?:string;alt?:string;cls?:string}){
+function Img({src,alt='',cls='',onOpen}:{src?:string;alt?:string;cls?:string;onOpen?:()=>void}){
  const [ok,setOk]=useState(!!src)
- return <div className={`ph ${cls}`} data-l={`REPLACE · ${src||'add image in admin'}`}>{ok&&<img src={src} alt={alt} loading="lazy" decoding="async" onError={()=>setOk(false)}/>}</div>}
+ const act=ok&&onOpen
+ return <div className={`ph ${cls}${act?' zoom':''}`} data-l={`REPLACE · ${src||'add image in admin'}`} {...(act?{role:'button',tabIndex:0,'aria-label':'View full image',onClick:onOpen,onKeyDown:(e:{key:string})=>{if(e.key==='Enter')onOpen()}}:{})}>{ok&&<img src={src} alt={alt} loading="lazy" decoding="async" onError={()=>setOk(false)}/>}</div>}
 const Rv=({className='',children}:{className?:string;children:ReactNode})=><motion.div className={className} initial={{opacity:0,y:28}} whileInView={{opacity:1,y:0}} viewport={{once:true,amount:.12}} transition={{duration:.8,ease:[.2,.7,.2,1]}}>{children}</motion.div>
 function Cursor(){
  const el=useRef<HTMLDivElement>(null)
@@ -20,29 +21,44 @@ function Cursor(){
  return <div id="cur" ref={el}/>}
 function Case({id,L,onClose,onOpen}:{id:string|null;L:Lang;onClose:()=>void;onOpen:(id:string)=>void}){
  const t=UI[L],ref=useRef<HTMLDivElement>(null),last=useRef<Project>()
+ const [lb,setLb]=useState<number|null>(null),lbRef=useRef<number|null>(null)
+ lbRef.current=lb
  const p=projects.find(x=>x.id===id);if(p)last.current=p
  const sp=last.current
- useEffect(()=>{document.body.style.overflow=id?'hidden':'';if(id)ref.current?.scrollTo(0,0)
-  const k=(e:KeyboardEvent)=>{if(e.key==='Escape'&&id)onClose()};addEventListener('keydown',k);return()=>removeEventListener('keydown',k)},[id])
+ useEffect(()=>{setLb(null);document.body.style.overflow=id?'hidden':'';if(id)ref.current?.scrollTo(0,0)
+  const k=(e:KeyboardEvent)=>{if(e.key==='Escape'&&id){if(lbRef.current!==null)setLb(null);else onClose()}};addEventListener('keydown',k);return()=>removeEventListener('keydown',k)},[id])
  const keys=['overview','challenge','concept','direction','process'] as const
  const imgs=sp?.images?.length?sp.images:['','']
+ const all=[sp?.cover,...(sp?.images||[])].filter(Boolean) as string[]
+ const step=(d:number)=>setLb(i=>i===null?i:(i+d+all.length)%all.length)
+ const open=(s:string)=>s?()=>setLb(all.indexOf(s)):undefined
+ useEffect(()=>{if(lb===null)return
+  const k=(e:KeyboardEvent)=>{const f=L==='ar'?-1:1;if(e.key==='ArrowRight')step(f);if(e.key==='ArrowLeft')step(-f)}
+  addEventListener('keydown',k);return()=>removeEventListener('keydown',k)},[lb===null,all.length,L])
  const gal:ReactNode[]=[]
  for(let j=0;j<imgs.length;j++){
-  if(j%3===0)gal.push(<Img key={j} src={imgs[j]} cls="full"/>)
-  else if(j%3===1)gal.push(imgs[j+1]!==undefined?<div className="two" key={j}><Img src={imgs[j]} cls="half"/><Img src={imgs[j+1]} cls="half"/></div>:<Img key={j} src={imgs[j]} cls="full"/>)}
- return <div id="case" ref={ref} className={id?'open':''} role="dialog" aria-modal="true" aria-hidden={!id}>
+  if(j%3===0)gal.push(<Img key={j} src={imgs[j]} cls="full" onOpen={open(imgs[j])}/>)
+  else if(j%3===1)gal.push(imgs[j+1]!==undefined?<div className="two" key={j}><Img src={imgs[j]} cls="half" onOpen={open(imgs[j])}/><Img src={imgs[j+1]} cls="half" onOpen={open(imgs[j+1])}/></div>:<Img key={j} src={imgs[j]} cls="full" onOpen={open(imgs[j])}/>)}
+ return <>
+ <div id="case" ref={ref} className={id?'open':''} role="dialog" aria-modal="true" aria-hidden={!id}>
   <div className="top"><span className="m">{t.of} {sp?String(projects.indexOf(sp)+1).padStart(2,'0'):''} / {String(projects.length).padStart(2,'0')}</span>
    <button className="btn s" style={{padding:'8px 16px'}} onClick={onClose}><X size={16}/> {t.close}</button></div>
   {sp&&<div className="wrap cs">
    <p className="m ac">{sp.category[L]}</p><h1 style={{marginTop:14}}>{sp.title[L]}</h1>
    <div className="facts"><div><span className="m">{t.year}</span><br/>{sp.year}</div><div><span className="m">{t.client}</span><br/>{sp.client||'—'}</div><div><span className="m">{t.role}</span><br/>{sp.role?.[L]||'—'}</div></div>
-   <Img src={sp.cover} alt={sp.title[L]} cls="full"/>
+   <Img src={sp.cover} alt={sp.title[L]} cls="full" onOpen={open(sp.cover)}/>
    {keys.map((k,j)=><div className="blk" key={k}><h3 className="m">0{j+1} — {t.sec[j]}</h3><p>{sp[k]?.[L]||t.fill}</p></div>)}
    <h3 className="m" style={{marginTop:50}}>{t.out}</h3>{gal}
    <h3 className="m" style={{marginTop:70}}>{t.rel}</h3>
    <div className="rel" style={{marginTop:16}}>{projects.filter(x=>x.id!==sp.id).slice(0,3).map(r=>
     <a key={r.id} href="#work" className="card in" style={{margin:0,gridColumn:'auto'}} onClick={e=>{e.preventDefault();onOpen(r.id)}}><Img src={r.cover} alt={r.title[L]}/><div className="meta"><h3 style={{fontSize:'1.2rem'}}>{r.title[L]}</h3></div><span className="m">{r.category[L]}</span></a>)}</div>
-  </div>}</div>}
+  </div>}</div>
+ {lb!==null&&all[lb]&&<div className="lb" role="dialog" aria-modal="true" onClick={()=>setLb(null)}>
+  <img src={all[lb]} alt=""/>
+  <button className="lbx" aria-label="Close" onClick={()=>setLb(null)}><X size={22}/></button>
+  {all.length>1&&<><button className="lbn p" aria-label="Previous" onClick={e=>{e.stopPropagation();step(-1)}}>‹</button><button className="lbn n" aria-label="Next" onClick={e=>{e.stopPropagation();step(1)}}>›</button></>}
+  <span className="m lbc">{lb+1} / {all.length}</span></div>}
+ </>}
 export default function App(){
  const [L,setL]=useState<Lang>(()=>{try{return(localStorage.getItem('lang') as Lang)||'en'}catch{return'en'}})
  const [cur,setCur]=useState<string|null>(null),[menu,setMenu]=useState(false)
