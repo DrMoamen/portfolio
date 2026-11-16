@@ -51,7 +51,9 @@ export default function App(){
  useEffect(()=>{document.body.style.overflow=menu?'hidden':''},[menu])
  const ids=['work','about','experience','services','contact']
  const c=site.contact as Record<string,string>
- const href:Record<string,(v:string)=>string>={email:v=>'mailto:'+v,whatsapp:v=>'https://wa.me/'+v.replace(/\D/g,''),behance:v=>v,instagram:v=>v,linkedin:v=>v}
+ const url=(v:string,base:string)=>/^https?:\/\//.test(v)?v:base+v.replace(/^@/,'').replace(/^\//,'')
+const href:Record<string,(v:string)=>string>={email:v=>'mailto:'+v,whatsapp:v=>'https://wa.me/'+v.replace(/\D/g,''),behance:v=>url(v,'https://www.behance.net/'),instagram:v=>url(v,'https://www.instagram.com/'),linkedin:v=>url(v,'https://www.linkedin.com/in/')}
+const short=(k:string,v:string)=>k==='email'||k==='whatsapp'?v:v.replace(/^https?:\/\/(www\.)?/,'').replace(/\/$/,'').split('/').pop()||v
  const svc=site.services.map(s=>s[L])
  return <>
   <Cursor/>
