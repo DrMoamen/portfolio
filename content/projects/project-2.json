@@ -1,23 +1,40 @@
 {
- "order": 2,
- "year": "20XX",
- "title": {
-  "en": "Project Two",
-  "ar": "المشروع الثاني"
- },
- "category": {
-  "en": "Social Media Campaigns",
-  "ar": "حملات السوشيال ميديا"
- },
- "description": {
-  "en": "Placeholder — edit in the admin.",
-  "ar": "نص مؤقت — عدّله من لوحة الأدمن."
- },
- "cover": "",
- "images": [],
- "client": "[Client]",
- "role": {
-  "en": "[Your role]",
-  "ar": "[دورك]"
- }
+  "order": 2,
+  "year": "2025",
+  "title": {
+    "en": "BLS Funday Teaser poster",
+    "ar": "بوست تشويقي لفان داي مدرسة بدر للغات"
+  },
+  "category": {
+    "en": "Social Media designs",
+    "ar": "تصميمات السوشيال ميديا"
+  },
+  "description": null,
+  "cover": "/uploads/pasted-image-1794837063638.png",
+  "images": [],
+  "client": "Helm Hayah Events",
+  "role": {
+    "en": "Art direction, design, and execution",
+    "ar": "الإخراج الفني، والتصميم، والتنفيذ"
+  },
+  "overview": {
+    "en": "A promotional poster design for BLS SENIORS 2025 by Helm Hayah Events, inspired by cinematic movie posters to present the event in an unconventional way that combines suspense, excitement, and youthful energy.\n\nThe design uses visual elements inspired by horror films, featuring a group of students in the foreground against an oversized dramatic background composition, creating a cinematic atmosphere that captures attention and sparks curiosity about the event.",
+    "ar": "تصميم بوستر ترويجي لفعالية BLS SENIORS 2025 التابعة لـ Helm Hayah Events، مستوحى من الأسلوب البصري للملصقات السينمائية، بهدف تقديم الحدث بصورة غير تقليدية تجمع بين التشويق والإثارة والطابع الشبابي.\n\nاعتمد التصميم على توظيف عناصر سينمائية مستوحاة من أفلام الرعب، مع إبراز مجموعة من الطلاب في المقدمة وتكوين بصري ضخم في الخلفية، ليمنح البوستر طابعًا دراميًا يجذب الانتباه ويخلق حالة من الفضول حول الحدث."
+  },
+  "challenge": {
+    "en": "The main challenge was to present a student event through a visual style that breaks away from conventional graduation and senior event designs.\n\nThe goal was to create an experience inspired by cinematic movie posters while maintaining the event's identity and positioning the students as the central visual element.\n\nAchieving a balance between horror-inspired suspense and the youthful, celebratory nature of the event was essential.",
+    "ar": "كان التحدي هو تقديم فعالية طلابية بأسلوب بصري مختلف عن التصميمات التقليدية الخاصة بفعاليات التخرج والـ Seniors.\n\nتطلب الأمر خلق تجربة بصرية تحمل روح الملصقات السينمائية، مع الحفاظ على وضوح هوية الحدث وإبراز الطلاب باعتبارهم العنصر الرئيسي في التصميم.\n\nوكان من الضروري تحقيق توازن بين أجواء الرعب والتشويق من جهة، والطابع الاحتفالي والشبابي للفعالية من جهة أخرى."
+  },
+  "concept": {
+    "en": "The creative concept draws inspiration from the world of horror and thriller films, reinterpreting their visual language to present a senior event through an unconventional cinematic approach.\n\nAn oversized horror-inspired face dominates the background, while a group of students appears in the foreground as the protagonists of the story.\n\nThe idea was to transform the event announcement into a cinematic movie poster, making the audience feel that they are about to experience an exciting story rather than simply attend a student event.",
+    "ar": "استُلهم المفهوم من عالم أفلام الرعب والتشويق، مع إعادة توظيف عناصره لتقديم فعالية Seniors بأسلوب سينمائي غير تقليدي.\n\nتم استخدام وجه مرعب ضخم في الخلفية ليكون العنصر البصري المسيطر، بينما تظهر مجموعة الطلاب في المقدمة باعتبارهم أبطال القصة.\n\nالفكرة هي تحويل الإعلان عن الفعالية إلى ما يشبه الملصق الترويجي لفيلم سينمائي، بحيث يشعر المشاهد أنه أمام تجربة مليئة بالأحداث والإثارة، وليس مجرد إعلان عن يوم ترفيهي."
+  },
+  "direction": {
+    "en": "The art direction recreates the cinematic atmosphere of horror films through dramatic lighting, strong color contrast, and layered visual compositions.\n\nVisual Composition: An oversized horror-inspired element dominates the background, while the students are positioned in the foreground to create depth and visual hierarchy.\n\nColor Palette: Dark blue and cyan tones establish a mysterious, cold atmosphere, while red accents introduce intensity and tension.\n\nLighting & Atmosphere: Dramatic blue lighting highlights the characters and enhances the cinematic mood.\n\nTypography: A bold, impactful typeface gives the BLS SENIORS title a strong presence, inspired by cinematic movie titles.\n\nVisual Hierarchy: The composition guides the viewer's attention from the dominant background element to the students, followed by the event title and supporting details.",
+    "ar": "اعتمد الإخراج الفني على محاكاة الأجواء السينمائية لأفلام الرعب، من خلال استخدام الإضاءة الدرامية والتباين اللوني والتكوينات البصرية متعددة المستويات.\n\nVisual Composition: وضع العنصر المرعب في الخلفية بحجم ضخم، مع توزيع الطلاب في المقدمة لخلق عمق بصري وتسلسل واضح للعناصر.\n\nColor Palette: الاعتماد على درجات الأزرق الداكن والسماوي لإضفاء أجواء غامضة وباردة، مع استخدام الأحمر في التفاصيل لإضافة إحساس بالقوة والتوتر.\n\nLighting & Atmosphere: استخدام إضاءة زرقاء درامية لإبراز الشخصيات وإضافة طابع سينمائي للمشهد.\n\nTypography: استخدام خط عريض وقوي لعنوان BLS SENIORS، مع تأثيرات لونية تمنحه حضورًا يشبه عناوين الأفلام السينمائية.\n\nVisual Hierarchy: توجيه عين المشاهد من العنصر الرئيسي في الخلفية إلى الطلاب، ثم إلى عنوان الفعالية والتفاصيل المصاحبة."
+  },
+  "process": {
+    "en": "Art Direction & Visual Development: Establishing a visual direction inspired by horror and thriller movie posters.\n\nConcept Development: Building a concept that connects cinematic storytelling with the identity of student events.\n\nComposition Building: Arranging the main visual elements and foreground characters to achieve depth and balance.\n\nImage Treatment: Creating a consistent visual appearance through dramatic lighting, color grading, and cinematic effects.\n\nTypography Design: Developing a bold headline that complements the visual direction and strengthens the poster's impact.\n\nFinal Execution: Bringing all elements together into a cohesive cinematic composition that reflects the event's personality.",
+    "ar": "الإخراج الفني، والتصميم، والتنفيذ: تحديد الاتجاه البصري المستوحى من ملصقات أفلام الرعب والتشويق.\n\nتطوير المفهوم: بناء فكرة تجمع بين أجواء السينما وهوية الفعاليات الطلابية.\n\nبناء التكوين: توزيع العناصر الرئيسية بين الخلفية والشخصيات الأمامية لتحقيق العمق والتوازن.\n\nمعالجة الصور: توحيد المظهر البصري للشخصيات من خلال الإضاءة والتدرجات اللونية والتأثيرات السينمائية.\n\nالتصميم الطباعي: تطوير عنوان رئيسي قوي يتناسب مع طبيعة التصميم ويعزز حضوره البصري.\n\nالإخراج النهائي: دمج جميع العناصر في تكوين سينمائي متكامل يعكس شخصية الحدث."
+  }
 }
