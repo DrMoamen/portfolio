@@ -91,7 +91,7 @@ const short=(k:string,v:string)=>k==='email'||k==='whatsapp'?v:v.replace(/^https
    <section id="work" className="wrap"><div className="head"><h2>{t.workT}</h2><p className="m">({String(projects.length).padStart(2,'0')})</p></div>
     <div className="grid">{projects.map((p,i)=>
      <motion.a key={p.id} className="card in" href="#work" onClick={e=>{e.preventDefault();setCur(p.id)}} initial={{opacity:0,y:28}} whileInView={{opacity:1,y:0}} viewport={{once:true,amount:.12}} transition={{duration:.8,ease:[.2,.7,.2,1]}}>
-      <motion.div className="imgbox" initial={{clipPath:'inset(0 0 100% 0)'}} whileInView={{clipPath:'inset(0 0 0% 0)'}} viewport={{once:true,amount:.12}} transition={{duration:.9,ease:[.7,0,.2,1]}}><Img src={p.cover} alt={p.title[L]}/></motion.div>
+      <div className="imgbox"><Img src={p.cover} alt={p.title[L]}/></div>
       <div className="meta"><h3>{p.title[L]}</h3><span className="m">{String(i+1).padStart(2,'0')} / {p.year}</span></div>
       <span className="m">{p.category[L]}</span><p>{p.description[L]}</p><span className="vp m">{t.view} <Arrow/></span></motion.a>)}</div></section>
    <section id="about" className="wrap"><div className="ab"><Rv><Img src={site.photo} alt="Mohamed Momen"/><p className="m" style={{marginTop:14}}>ASSIUT, EGYPT</p></Rv>
