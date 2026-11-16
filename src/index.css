@@ -122,3 +122,13 @@ footer{padding:24px var(--pad);display:flex;justify-content:space-between;flex-w
 #cur.big{width:56px;height:56px;margin:-21px 0 0 -21px}
 @media(hover:hover) and (pointer:fine){#cur{display:block}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01s!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+.zoom{cursor:zoom-in}
+.zoom img{transition:transform .6s cubic-bezier(.2,.7,.2,1)}.zoom:hover img{transform:scale(1.03)}
+.lb{position:fixed;inset:0;z-index:90;background:rgba(11,11,13,.96);display:grid;place-items:center;padding:56px 16px;cursor:zoom-out}
+.lb img{max-width:100%;max-height:calc(100svh - 112px);object-fit:contain}
+.lbx,.lbn{position:absolute;color:var(--fg);background:rgba(11,11,13,.6);border:1px solid var(--ln);width:48px;height:48px;display:grid;place-items:center;font-size:1.6rem;line-height:1}
+.lbx{top:calc(12px + env(safe-area-inset-top,0px));inset-inline-end:12px}
+.lbn{top:50%;margin-top:-24px}.lbn.p{inset-inline-start:12px}.lbn.n{inset-inline-end:12px}
+[dir=rtl] .lbn{transform:scaleX(-1)}
+.lbx:hover,.lbn:hover{border-color:var(--ac);color:var(--ac)}
+.lbc{position:absolute;bottom:calc(14px + env(safe-area-inset-bottom,0px))}
