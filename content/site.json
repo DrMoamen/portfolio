@@ -1,0 +1,100 @@
+{
+ "photo": "",
+ "contact": {
+  "email": "",
+  "whatsapp": "",
+  "behance": "",
+  "instagram": "",
+  "linkedin": ""
+ },
+ "about": {
+  "p1": {
+   "en": "I'm Mohamed Momen, a graphic designer based in Assiut, Egypt, with four years of experience turning ideas into clear, memorable visuals.",
+   "ar": "أنا محمد مؤمن، مصمم جرافيك من أسيوط في مصر، لدي أربع سنوات من الخبرة في تحويل الأفكار إلى صور واضحة لا تُنسى."
+  },
+  "p2": {
+   "en": "I've worked as a Senior Graphic Designer at Helm Hayah, as a Graphic Designer at IRIS Marketing Agency, and I'm now at VIP Events, creating event visuals, print designs and social media campaigns.",
+   "ar": "عملت مصممًا أول في Helm Hayah ومصممًا في IRIS Marketing Agency، وأعمل الآن في VIP Events على تصميم مواد الفعاليات والمطبوعات وحملات السوشيال ميديا."
+  },
+  "p3": {
+   "en": "I care about visual storytelling, branding and solving creative problems with a simple idea executed well.",
+   "ar": "أهتم بسرد القصص بالصورة، وبناء الهويات، وحل المشكلات الإبداعية بفكرة بسيطة تُنفَّذ جيدًا."
+  }
+ },
+ "skills": [
+  "Adobe Photoshop",
+  "Adobe Illustrator",
+  "Adobe Premiere Pro (basic)",
+  "Visual Identity",
+  "Branding",
+  "Social Media Design",
+  "Advertising",
+  "Print Design",
+  "Event Branding",
+  "Creative Direction"
+ ],
+ "services": [
+  {
+   "en": "Brand Identity Design",
+   "ar": "تصميم الهوية البصرية"
+  },
+  {
+   "en": "Social Media Design",
+   "ar": "تصميم السوشيال ميديا"
+  },
+  {
+   "en": "Advertising Campaigns",
+   "ar": "الحملات الإعلانية"
+  },
+  {
+   "en": "Print Design",
+   "ar": "التصميم المطبوع"
+  },
+  {
+   "en": "Event Visual Identity",
+   "ar": "هوية الفعاليات البصرية"
+  },
+  {
+   "en": "Creative Art Direction",
+   "ar": "الإدارة الفنية الإبداعية"
+  }
+ ],
+ "experience": [
+  {
+   "company": "Helm Hayah",
+   "role": {
+    "en": "Senior Graphic Designer",
+    "ar": "مصمم جرافيك أول"
+   },
+   "duration": {
+    "en": "3 Years",
+    "ar": "٣ سنوات"
+   },
+   "dates": "[add dates]"
+  },
+  {
+   "company": "IRIS Marketing Agency",
+   "role": {
+    "en": "Graphic Designer",
+    "ar": "مصمم جرافيك"
+   },
+   "duration": {
+    "en": "2 Months",
+    "ar": "شهران"
+   },
+   "dates": "[add dates]"
+  },
+  {
+   "company": "VIP Events",
+   "role": {
+    "en": "Graphic Designer",
+    "ar": "مصمم جرافيك"
+   },
+   "duration": {
+    "en": "Current / Most Recent Role",
+    "ar": "الوظيفة الحالية / الأحدث"
+   },
+   "dates": "[add dates]"
+  }
+ ]
+}

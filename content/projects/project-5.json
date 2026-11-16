@@ -1,0 +1,23 @@
+{
+ "order": 5,
+ "year": "20XX",
+ "title": {
+  "en": "Project Five",
+  "ar": "المشروع الخامس"
+ },
+ "category": {
+  "en": "Print & Merchandise Design",
+  "ar": "التصميم المطبوع والمنتجات"
+ },
+ "description": {
+  "en": "Placeholder — edit in the admin.",
+  "ar": "نص مؤقت — عدّله من لوحة الأدمن."
+ },
+ "cover": "",
+ "images": [],
+ "client": "[Client]",
+ "role": {
+  "en": "[Your role]",
+  "ar": "[دورك]"
+ }
+}

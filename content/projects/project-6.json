@@ -1,0 +1,23 @@
+{
+ "order": 6,
+ "year": "20XX",
+ "title": {
+  "en": "Project Six",
+  "ar": "المشروع السادس"
+ },
+ "category": {
+  "en": "Experimental Graphic Design",
+  "ar": "التصميم الجرافيكي التجريبي"
+ },
+ "description": {
+  "en": "Placeholder — edit in the admin.",
+  "ar": "نص مؤقت — عدّله من لوحة الأدمن."
+ },
+ "cover": "",
+ "images": [],
+ "client": "[Client]",
+ "role": {
+  "en": "[Your role]",
+  "ar": "[دورك]"
+ }
+}

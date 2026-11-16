@@ -1,0 +1,41 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: public/uploads
+public_folder: /uploads
+collections:
+  - name: projects
+    label: Projects
+    folder: content/projects
+    extension: json
+    format: json
+    create: true
+    slug: "project-{{fields.order}}-{{hour}}{{minute}}{{second}}"
+    fields:
+      - {label: Order, name: order, widget: number, value_type: int, default: 1}
+      - {label: Year, name: year, widget: string, required: false}
+      - {label: Title, name: title, widget: object, required: false, fields: [{label: English, name: en, widget: string, required: false}, {label: 'العربية', name: ar, widget: string, required: false}]}
+      - {label: Category, name: category, widget: object, required: false, fields: [{label: English, name: en, widget: string, required: false}, {label: 'العربية', name: ar, widget: string, required: false}]}
+      - {label: Short description, name: description, widget: object, required: false, fields: [{label: English, name: en, widget: text, required: false}, {label: 'العربية', name: ar, widget: text, required: false}]}
+      - {label: Cover image, name: cover, widget: image, required: false}
+      - {label: Gallery images, name: images, widget: list, required: false, field: {label: Image, name: image, widget: image}}
+      - {label: Client, name: client, widget: string, required: false}
+      - {label: Your role, name: role, widget: object, required: false, fields: [{label: English, name: en, widget: string, required: false}, {label: 'العربية', name: ar, widget: string, required: false}]}
+      - {label: Overview, name: overview, widget: object, required: false, fields: [{label: English, name: en, widget: text, required: false}, {label: 'العربية', name: ar, widget: text, required: false}]}
+      - {label: Challenge, name: challenge, widget: object, required: false, fields: [{label: English, name: en, widget: text, required: false}, {label: 'العربية', name: ar, widget: text, required: false}]}
+      - {label: Concept, name: concept, widget: object, required: false, fields: [{label: English, name: en, widget: text, required: false}, {label: 'العربية', name: ar, widget: text, required: false}]}
+      - {label: Direction, name: direction, widget: object, required: false, fields: [{label: English, name: en, widget: text, required: false}, {label: 'العربية', name: ar, widget: text, required: false}]}
+      - {label: Process, name: process, widget: object, required: false, fields: [{label: English, name: en, widget: text, required: false}, {label: 'العربية', name: ar, widget: text, required: false}]}
+  - name: site
+    label: Site Settings
+    files:
+      - name: site
+        label: Site
+        file: content/site.json
+        fields:
+          - {label: Photo, name: photo, widget: image, required: false}
+          - {label: Contact, name: contact, widget: object, fields: [{label: Email, name: email, widget: string, required: false}, {label: Whatsapp, name: whatsapp, widget: string, required: false}, {label: Behance, name: behance, widget: string, required: false}, {label: Instagram, name: instagram, widget: string, required: false}, {label: Linkedin, name: linkedin, widget: string, required: false}]}
+          - {label: About, name: about, widget: object, fields: [{label: Paragraph 1, name: p1, widget: object, required: false, fields: [{label: English, name: en, widget: text, required: false}, {label: 'العربية', name: ar, widget: text, required: false}]}, {label: Paragraph 2, name: p2, widget: object, required: false, fields: [{label: English, name: en, widget: text, required: false}, {label: 'العربية', name: ar, widget: text, required: false}]}, {label: Paragraph 3, name: p3, widget: object, required: false, fields: [{label: English, name: en, widget: text, required: false}, {label: 'العربية', name: ar, widget: text, required: false}]}]}
+          - {label: Skills, name: skills, widget: list, field: {label: Skill, name: skill, widget: string}}
+          - {label: Services, name: services, widget: list, fields: [{label: English, name: en, widget: string, required: false}, {label: 'العربية', name: ar, widget: string, required: false}]}
+          - {label: Experience, name: experience, widget: list, fields: [{label: Company, name: company, widget: string, required: false}, {label: Role, name: role, widget: object, required: false, fields: [{label: English, name: en, widget: string, required: false}, {label: 'العربية', name: ar, widget: string, required: false}]}, {label: Duration, name: duration, widget: object, required: false, fields: [{label: English, name: en, widget: string, required: false}, {label: 'العربية', name: ar, widget: string, required: false}]}, {label: Dates, name: dates, widget: string, required: false}]}

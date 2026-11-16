@@ -1,0 +1,23 @@
+{
+ "order": 3,
+ "year": "20XX",
+ "title": {
+  "en": "Project Three",
+  "ar": "المشروع الثالث"
+ },
+ "category": {
+  "en": "Advertising & Marketing",
+  "ar": "الإعلانات والتسويق"
+ },
+ "description": {
+  "en": "Placeholder — edit in the admin.",
+  "ar": "نص مؤقت — عدّله من لوحة الأدمن."
+ },
+ "cover": "",
+ "images": [],
+ "client": "[Client]",
+ "role": {
+  "en": "[Your role]",
+  "ar": "[دورك]"
+ }
+}
