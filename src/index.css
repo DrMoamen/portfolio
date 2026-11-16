@@ -35,6 +35,21 @@ nav .brand i{width:16px;height:30px}
 /* hero */
 .hero{min-height:100svh;padding-top:120px;display:grid;gap:40px;align-content:center;border:0;position:relative;overflow:hidden}
 .hero h1 span{display:inline-block}
+.hero h1.tw>span{display:inline}
+.hero h1 .u{display:inline}
+.hero h1 .u:not(.show){visibility:hidden}
+.hero h1 .u.last{display:inline-block;transform-origin:50% 85%}
+.hero h1 .u.last.show{animation:pop .6s cubic-bezier(.2,.9,.3,1.6)}
+@keyframes pop{0%{transform:scale(0)}100%{transform:scale(1)}}
+.hero h1.done .out{animation:fillin 1.3s ease .1s}
+@keyframes fillin{0%{color:transparent}35%{color:var(--ac)}100%{color:transparent}}
+.tw-caret{position:relative;display:inline-block;width:0;height:0}
+.tw-caret::after{content:"";position:absolute;inset-inline-start:.03em;bottom:-.06em;width:.07em;height:.82em;background:var(--ac)}
+.tw-caret.idle::after{animation:blink .8s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.hero .rise{opacity:0;transform:translateY(22px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.hero.go .rise{opacity:1;transform:none}
+.hero.go .rise.r2{transition-delay:.15s}.hero.go .rise.r3{transition-delay:.3s}
 .hero .sub{max-width:34ch;color:var(--mu);font-size:1.1rem;margin-block:28px}
 .btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;font-weight:700;text-transform:uppercase;font-size:.85rem;letter-spacing:.06em;border:1px solid var(--fg);transition:.3s}
 .btn.p{background:var(--ac);border-color:var(--ac);color:#0B0B0D}.btn.p:hover{background:var(--fg);border-color:var(--fg)}

@@ -3,6 +3,7 @@ import {motion} from 'framer-motion'
 import {ArrowRight,Menu,X} from 'lucide-react'
 import {site,projects,type Project} from './content'
 import {UI} from './ui'
+import Typewriter from './Typewriter'
 type Lang='en'|'ar'
 const Arrow=()=><ArrowRight size={16} strokeWidth={2.5}/>
 function Img({src,alt='',cls='',onOpen}:{src?:string;alt?:string;cls?:string;onOpen?:()=>void}){
@@ -61,7 +62,7 @@ function Case({id,L,onClose,onOpen}:{id:string|null;L:Lang;onClose:()=>void;onOp
  </>}
 export default function App(){
  const [L,setL]=useState<Lang>(()=>{try{return(localStorage.getItem('lang') as Lang)||'en'}catch{return'en'}})
- const [cur,setCur]=useState<string|null>(null),[menu,setMenu]=useState(false)
+ const [cur,setCur]=useState<string|null>(null),[menu,setMenu]=useState(false),[typed,setTyped]=useState(false)
  const t=UI[L]
  useEffect(()=>{document.documentElement.lang=L;document.documentElement.dir=t.dir;try{localStorage.setItem('lang',L)}catch{}},[L,t.dir])
  useEffect(()=>{document.body.style.overflow=menu?'hidden':''},[menu])
@@ -80,12 +81,12 @@ const short=(k:string,v:string)=>k==='email'||k==='whatsapp'?v:v.replace(/^https
     <button className="burger" onClick={()=>setMenu(!menu)} aria-label="Menu" aria-expanded={menu}>{menu?<X/>:<Menu/>}</button></div>
   </nav>
   <main id="top">
-   <header className="hero wrap"><div>
+   <header className={`hero wrap${typed?' go':''}`}><div>
      <p className="m" style={{marginBottom:22}}>{t.label}</p>
-     <h1 dangerouslySetInnerHTML={{__html:t.h1}}/>
-     <p className="sub">{t.sub}</p>
-     <div className="ctas"><a className="btn p" href="#work">{t.cta1} <Arrow/></a><a className="btn s" href="#contact">{t.cta2}</a></div></div>
-    <div className="comp" aria-hidden="true">{[0,1,2].map(i=><div key={i} className={`f ph${i===1?' o':''}`} data-l={`REPLACE · ${projects[i]?.cover||'hero image'}`}>{projects[i]?.cover&&<img src={projects[i].cover} alt=""/>}</div>)}<div className="bigmark"/></div>
+     <Typewriter html={t.h1} lang={L} instant={typed} onDone={()=>setTyped(true)}/>
+     <p className="sub rise">{t.sub}</p>
+     <div className="ctas rise r2"><a className="btn p" href="#work">{t.cta1} <Arrow/></a><a className="btn s" href="#contact">{t.cta2}</a></div></div>
+    <div className="comp rise r3" aria-hidden="true">{[0,1,2].map(i=><div key={i} className={`f ph${i===1?' o':''}`} data-l={`REPLACE · ${projects[i]?.cover||'hero image'}`}>{projects[i]?.cover&&<img src={projects[i].cover} alt=""/>}</div>)}<div className="bigmark"/></div>
    </header>
    <div className="marq m" aria-hidden="true"><div>{(svc.join(' ✦ ')+' ✦ ').repeat(4)}</div></div>
    <section id="work" className="wrap"><div className="head"><h2>{t.workT}</h2><p className="m">({String(projects.length).padStart(2,'0')})</p></div>
