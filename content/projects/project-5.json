@@ -1,23 +1,35 @@
 {
- "order": 5,
- "year": "20XX",
- "title": {
-  "en": "Project Five",
-  "ar": "المشروع الخامس"
- },
- "category": {
-  "en": "Print & Merchandise Design",
-  "ar": "التصميم المطبوع والمنتجات"
- },
- "description": {
-  "en": "Placeholder — edit in the admin.",
-  "ar": "نص مؤقت — عدّله من لوحة الأدمن."
- },
- "cover": "",
- "images": [],
- "client": "[Client]",
- "role": {
-  "en": "[Your role]",
-  "ar": "[دورك]"
- }
+  "order": 5,
+  "year": "2023-2026",
+  "title": {
+    "en": "Graduation Social media designs",
+    "ar": "تصميمات سوشيال ميديا للتخرج"
+  },
+  "category": {
+    "en": "Social media",
+    "ar": "سوشيال ميديا"
+  },
+  "description": {
+    "en": "Placeholder — edit in the admin.",
+    "ar": "نص مؤقت — عدّله من لوحة الأدمن."
+  },
+  "cover": "/uploads/Untitled Design.png",
+  "images": [
+    "/uploads/pasted-image-1794840052718.png",
+    "/uploads/pasted-image-1794840088121.png",
+    "/uploads/pasted-image-1794840172556.png",
+    "/uploads/pasted-image-1794840184470.png",
+    "/uploads/pasted-image-1794840207508.png",
+    "/uploads/pasted-image-1794840251442.png"
+  ],
+  "client": "[Client]",
+  "role": {
+    "en": "[Your role]",
+    "ar": "[دورك]"
+  },
+  "overview": null,
+  "challenge": null,
+  "concept": null,
+  "direction": null,
+  "process": null
 }
