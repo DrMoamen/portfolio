@@ -11,7 +11,9 @@
   },
   "description": null,
   "cover": "/uploads/pasted-image-1794837063638.png",
-  "images": [],
+  "images": [
+    "/uploads/pasted-image-1794837063638.png"
+  ],
   "client": "Helm Hayah Events",
   "role": {
     "en": "Art direction, design, and execution",
