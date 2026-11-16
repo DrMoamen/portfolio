@@ -112,8 +112,8 @@ nav .brand i{width:16px;height:30px}
 .ct .m,.ct .ac{color:#0B0B0D}
 .ct .btn{border-color:#0B0B0D;margin-top:36px}.ct .btn.p{background:#0B0B0D;color:var(--fg)}.ct .btn.p:hover{background:var(--fg);color:#0B0B0D}
 .cl{display:grid;gap:0;margin-top:50px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-.cl>*{padding:18px 0;border-top:1px solid rgba(11,11,13,.4);display:block}
-.cl b{display:block;font-size:1.05rem;word-break:break-all}
+.cl>*{padding-block:18px;padding-inline-end:20px;min-width:0;border-top:1px solid rgba(11,11,13,.4);display:block}
+.cl b{display:block;font-size:1.05rem;overflow-wrap:anywhere}
 .cl a:hover b{text-decoration:underline}
 footer{padding:24px var(--pad);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-bottom:calc(24px + env(safe-area-inset-bottom,0px))}
 /* motion */
