@@ -27,9 +27,24 @@
     "en": "Art director and Designer",
     "ar": "مدير فني ومصمم"
   },
-  "overview": null,
-  "challenge": null,
-  "concept": null,
-  "direction": null,
-  "process": null
+  "overview": {
+    "en": "A promotional design campaign for a summer party at Army Club, featuring Yara Mohamed and Hamada Magdy, aiming to capture the spirit of summer, music, and entertainment through engaging visual communication.\n\nThe campaign focused on highlighting the featured artists and creating a distinctive visual presence that builds audience excitement and attracts attention through a collection of social media promotional designs.",
+    "ar": "مشروع تصميم حملة ترويجية لحفلة صيفية بنادي الجيش، بمشاركة الفنانة يارا محمد والفنان حمادة مجدي، بهدف تقديم الحدث بصورة بصرية جذابة تعكس أجواء الصيف والموسيقى والترفيه.\n\nركزت الحملة على إبراز الفنانين المشاركين وخلق حضور بصري مميز يعزز حماس الجمهور ويجذب انتباهه، من خلال مجموعة من التصميمات المخصصة للترويج للحدث عبر منصات التواصل الاجتماعي."
+  },
+  "challenge": {
+    "en": "The main challenge was to create promotional visuals capable of capturing the audience's attention and communicating the excitement of a summer entertainment event, while placing the featured artists at the center of the campaign.\n\nThe project required a visual approach that balances the event's entertaining atmosphere with a consistent promotional direction, building excitement and anticipation among the audience.",
+    "ar": "كان التحدي هو ابتكار تصميمات ترويجية قادرة على جذب انتباه الجمهور وإيصال أجواء الحفلة الصيفية بشكل واضح وجذاب، مع إبراز الفنانين المشاركين باعتبارهم العنصر الأساسي في الحملة.\n\nكما تطلب الأمر تقديم محتوى بصري يوازن بين الطابع الترفيهي للحدث والهوية البصرية لكل تصميم، بما يخلق حالة من الحماس والترقب لدى الجمهور"
+  },
+  "concept": {
+    "en": "The creative concept was inspired by the energy and excitement of summer entertainment events, aiming to transform the party announcement into a visual experience that reflects the atmosphere of the event before it begins.\n\nThe visual direction focused on presenting the featured artists in an engaging way, strengthening the audience's connection with the event and building anticipation for the upcoming experience.",
+    "ar": "انطلق المفهوم الإبداعي من روح الحفلات الصيفية وما تحمله من طاقة وحيوية وترفيه، مع التركيز على تحويل الإعلان عن الحفلة إلى تجربة بصرية تعكس أجواء الحدث قبل انطلاقه.\n\nتمحور الاتجاه حول إبراز الفنانين المشاركين وتقديمهم بصورة جذابة، بما يعزز ارتباط الجمهور بالحدث ويخلق شعورًا بالحماس تجاه التجربة المنتظرة."
+  },
+  "direction": {
+    "en": "The art direction focused on developing a promotional visual language suitable for large-scale entertainment events, with particular attention to artist presentation and clear information hierarchy.\n\nVisual Composition: Organizing design elements to ensure clear presentation of the artists and essential event information.\n\nArtist Highlighting: Positioning the performers' imagery as the primary visual communication element.\n\nTypography: Applying clear and engaging typography to emphasize artist names and event details.\n\nVisual Hierarchy: Structuring information according to importance for easy reading and quick recognition.\n\nPromotional Appeal: Creating energetic promotional visuals that reflect the entertaining nature of summer events.",
+    "ar": "اعتمد الإخراج الفني على تقديم معالجة بصرية ترويجية تتناسب مع طبيعة الحفلات الجماهيرية، مع الاهتمام بإبراز الفنانين وتحقيق تسلسل بصري واضح للمعلومات.\n\nVisual Composition: تنظيم العناصر داخل التصميم بما يضمن وضوح الفنانين والمعلومات الأساسية للحدث.\n\nArtist Highlighting: التركيز على صور الفنانين باعتبارها العنصر الرئيسي في التواصل البصري مع الجمهور.\n\nTypography: استخدام معالجة طباعية واضحة وجذابة لإبراز أسماء الفنانين وتفاصيل الحفلة.\n\nVisual Hierarchy: ترتيب المعلومات وفقًا لأهميتها لضمان سهولة القراءة وسرعة استيعاب تفاصيل الحدث.\n\nPromotional Appeal: بناء تصميمات تحمل طابعًا ترفيهيًا وحيويًا يتناسب مع طبيعة الحفلات الصيفية."
+  },
+  "process": {
+    "en": "Event Understanding: Analyzing the event's nature, target audience, and featured performers.\n\nVisual Direction: Establishing a design direction that reflects the summer atmosphere and entertainment aspect of the event.\n\nVisual Asset Preparation: Selecting and editing artist imagery and supporting visual elements.\n\nComposition Development: Arranging images, headlines, and event details to achieve visual balance and hierarchy.\n\nDesign & Execution: Producing the promotional designs with attention to visual details and information clarity.\n\nSocial Media Preparation: Preparing the final artwork for social media platforms and promotional use.",
+    "ar": "فهم طبيعة الحدث: دراسة طبيعة الحفلة والجمهور المستهدف والفنانين المشاركين.\n\nتحديد الاتجاه البصري: اختيار توجه تصميمي يتناسب مع أجواء الحفلات الصيفية والطابع الترفيهي للحدث.\n\nتجهيز العناصر البصرية: اختيار ومعالجة صور الفنانين والعناصر المستخدمة في التصميمات.\n\nبناء التكوين: توزيع الصور والعناوين والتفاصيل لتحقيق التوازن والتسلسل البصري.\n\nالتصميم والإخراج: تنفيذ التصميمات مع الاهتمام بالتفاصيل البصرية ووضوح المعلومات.\n\nالتجهيز للنشر: إعداد التصميمات بما يتناسب مع منصات التواصل الاجتماعي والاستخدامات الترويجية."
+  }
 }
