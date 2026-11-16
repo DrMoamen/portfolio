@@ -88,7 +88,7 @@ const short=(k:string,v:string)=>k==='email'||k==='whatsapp'?v:v.replace(/^https
     {svc.map((s,i)=><Rv key={i} className="sv"><span className="m">0{i+1}</span>{s}</Rv>)}</section>
    <section id="contact" className="wrap ct"><p className="m">{t.ctL}</p><h2 style={{marginTop:16}} dangerouslySetInnerHTML={{__html:t.ctH}}/>
     <a className="btn p" href={c.email?'mailto:'+c.email:'#contact'}>{t.start}</a>
-    <div className="cl">{Object.keys(t.cn).map(k=>c[k]?<a key={k} href={href[k](c[k])} target="_blank" rel="noopener"><span className="m">{t.cn[k as keyof typeof t.cn]}</span><b>{c[k]}</b></a>:<div key={k}><span className="m">{t.cn[k as keyof typeof t.cn]}</span><b style={{opacity:.55}}>{t.ph}</b></div>)}</div></section>
+    <div className="cl">{Object.keys(t.cn).map(k=>c[k]?<a key={k} href={href[k](c[k])} target="_blank" rel="noopener"><span className="m">{t.cn[k as keyof typeof t.cn]}</span><b>{short(k,c[k])} ↗</b></a>:<div key={k}><span className="m">{t.cn[k as keyof typeof t.cn]}</span><b style={{opacity:.55}}>{t.ph}</b></div>)}</div></section>
   </main>
   <footer className="m"><span>© {new Date().getFullYear()} Mohamed Momen</span><span>{t.foot}</span></footer>
   <Case id={cur} L={L} onClose={()=>setCur(null)} onOpen={setCur}/>
