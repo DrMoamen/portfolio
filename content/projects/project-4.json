@@ -1,23 +1,35 @@
 {
- "order": 4,
- "year": "20XX",
- "title": {
-  "en": "Project Four",
-  "ar": "المشروع الرابع"
- },
- "category": {
-  "en": "Event Branding & Graduation Campaigns",
-  "ar": "هوية الفعاليات وحملات التخرج"
- },
- "description": {
-  "en": "Placeholder — edit in the admin.",
-  "ar": "نص مؤقت — عدّله من لوحة الأدمن."
- },
- "cover": "",
- "images": [],
- "client": "[Client]",
- "role": {
-  "en": "[Your role]",
-  "ar": "[دورك]"
- }
+  "order": 4,
+  "year": "2025",
+  "title": {
+    "en": "Military forces club - summer party",
+    "ar": "حفلة الصيف بنادي الجيش"
+  },
+  "category": {
+    "en": "Event Branding & Printings",
+    "ar": "هوية الفعاليات و المطبوعات"
+  },
+  "description": {
+    "en": "A collection of promotional designs for a summer party at Army Club, featuring Yara Mohamed and Hamada Magdy.\n\nThe project aimed to create an engaging visual presence that captures the spirit of summer entertainment and live music. The designs focused on highlighting the featured artists while using expressive graphic elements, colors, and compositions to attract the target audience and build excitement around the event.",
+    "ar": "مجموعة من التصميمات الترويجية لحفلة صيفية بنادي الجيش، بمشاركة الفنانة يارا محمد والفنان حمادة مجدي، بهدف تقديم الحدث بصورة بصرية جذابة تعكس أجواء الصيف والترفيه والطاقة الموسيقية.\n\nركزت التصميمات على إبراز الفنانين المشاركين وخلق حضور بصري قوي للحدث، مع توظيف العناصر الجرافيكية والألوان والتكوينات البصرية بما يتناسب مع طبيعة الحفلات الجماهيرية ويجذب انتباه الجمهور المستهدف."
+  },
+  "cover": "/uploads/pasted-image-1794841893948.png",
+  "images": [
+    "/uploads/pasted-image-1794841924208.png",
+    "/uploads/pasted-image-1794841934449.png",
+    "/uploads/pasted-image-1794841948863.png",
+    "/uploads/pasted-image-1794841980805.png",
+    "/uploads/pasted-image-1794842112672.png",
+    "/uploads/pasted-image-1794842151765.png"
+  ],
+  "client": "Military forces club - Assiut",
+  "role": {
+    "en": "Art director and Designer",
+    "ar": "مدير فني ومصمم"
+  },
+  "overview": null,
+  "challenge": null,
+  "concept": null,
+  "direction": null,
+  "process": null
 }
