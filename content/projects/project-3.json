@@ -1,23 +1,70 @@
 {
- "order": 3,
- "year": "20XX",
- "title": {
-  "en": "Project Three",
-  "ar": "المشروع الثالث"
- },
- "category": {
-  "en": "Advertising & Marketing",
-  "ar": "الإعلانات والتسويق"
- },
- "description": {
-  "en": "Placeholder — edit in the admin.",
-  "ar": "نص مؤقت — عدّله من لوحة الأدمن."
- },
- "cover": "",
- "images": [],
- "client": "[Client]",
- "role": {
-  "en": "[Your role]",
-  "ar": "[دورك]"
- }
+  "order": 3,
+  "year": "2025 - 2026",
+  "title": {
+    "en": "Foode & Beverage designs",
+    "ar": "ديزاينات المأكولات و المشروبات"
+  },
+  "category": {
+    "en": "Advertising & Marketing",
+    "ar": "الإعلانات والتسويق"
+  },
+  "description": {
+    "en": "A collection of creative designs in the food and beverage industry, covering restaurants, cafés, and food brands. These projects aim to present products through visually engaging designs that combine creativity, brand identity, and effective audience communication.",
+    "ar": "مجموعة من الأعمال الإبداعية في مجال تصميم الأغذية والمشروبات، تشمل المطاعم والكافيهات والعلامات التجارية الغذائية. تهدف هذه الأعمال إلى تقديم المنتجات بأسلوب بصري جذاب، يجمع بين الإبداع والهوية التجارية والتواصل الفعّال مع الجمهور."
+  },
+  "cover": "/uploads/Untitled Design (1).png",
+  "images": [
+    "/uploads/pasted-image-1794924250881.png",
+    "/uploads/pasted-image-1794924256337.png",
+    "/uploads/pasted-image-1794924263881.png",
+    "/uploads/pasted-image-1794924271427.png",
+    "/uploads/pasted-image-1794924276990.png",
+    "/uploads/pasted-image-1794924283080.png",
+    "/uploads/pasted-image-1794924288098.png",
+    "/uploads/pasted-image-1794924292193.png",
+    "/uploads/pasted-image-1794924297206.png",
+    "/uploads/pasted-image-1794924302600.png",
+    "/uploads/pasted-image-1794924308080.png",
+    "/uploads/pasted-image-1794924314136.png",
+    "/uploads/pasted-image-1794924318966.png",
+    "/uploads/pasted-image-1794924324992.png",
+    "/uploads/pasted-image-1794924330058.png",
+    "/uploads/pasted-image-1794924334353.png",
+    "/uploads/pasted-image-1794924339651.png",
+    "/uploads/pasted-image-1794924343966.png",
+    "/uploads/pasted-image-1794924348128.png",
+    "/uploads/pasted-image-1794924354368.png",
+    "/uploads/pasted-image-1794924360617.png",
+    "/uploads/pasted-image-1794924368664.png",
+    "/uploads/pasted-image-1794924375354.png",
+    "/uploads/pasted-image-1794926114753.png",
+    "/uploads/pasted-image-1794926132104.png",
+    "/uploads/pasted-image-1794926139216.png"
+  ],
+  "client": "Iris Marketing Agency",
+  "role": {
+    "en": "Designer",
+    "ar": "مصمم"
+  },
+  "overview": {
+    "en": "This category focuses on transforming food and beverage products into distinctive visual experiences through the strategic use of colors, compositions, photography, and graphic elements that reflect each brand's personality and strengthen its market presence.",
+    "ar": "يركز هذا المجال على تحويل المنتجات الغذائية والمشروبات إلى تجارب بصرية مميزة، من خلال توظيف الألوان والتكوينات والصور والعناصر الجرافيكية بما يعكس شخصية كل علامة تجارية ويعزز حضورها في السوق."
+  },
+  "challenge": {
+    "en": "The main challenge was creating designs that stand out in the highly competitive food and beverage market, presenting products in an appealing and distinctive way while maintaining a consistent visual direction that aligns with each brand's identity and target audience.",
+    "ar": "كان التحدي هو ابتكار تصاميم قادرة على جذب الانتباه وسط المنافسة الكبيرة في سوق الأغذية والمشروبات، مع إبراز المنتجات بطريقة شهية ومميزة، والحفاظ على هوية بصرية متناسقة تتناسب مع طبيعة كل علامة تجارية وجمهورها المستهدف."
+  },
+  "concept": {
+    "en": "The creative concept centered on making the product the hero of every design. Bold colors, visual compositions, and carefully crafted graphic details were used to communicate quality, flavor, and experience, turning every design into a clear and engaging visual message.",
+    "ar": "اعتمد المفهوم الإبداعي على جعل المنتج هو البطل الأساسي في كل تصميم، مع استخدام التكوينات البصرية والألوان الجريئة والتفاصيل الجرافيكية لخلق إحساس بالجودة والطعم والتجربة، وتحويل كل قطعة تصميمية إلى رسالة بصرية واضحة وجذابة."
+  },
+  "direction": {
+    "en": "A diverse range of marketing and visual assets was developed, with a strong focus on art direction, detail quality, and product presentation. The outputs included social media designs, promotional campaigns, commercial offers, and branded visual content for the food and beverage industry",
+    "ar": "تم تنفيذ مجموعة متنوعة من التصاميم التسويقية والبصرية، مع الاهتمام بالإخراج الفني وجودة التفاصيل وإبراز المنتجات. شملت المخرجات تصاميم السوشيال ميديا، والإعلانات الترويجية، والعروض التجارية، والمحتوى البصري المخصص للعلامات التجارية في قطاع الأغذية والمشروبات"
+  },
+  "process": {
+    "en": "The process began with understanding the product, brand identity, and target audience. This was followed by defining the visual direction and selecting suitable colors, elements, and compositions. Each design was then developed and refined, focusing on balancing product appeal with clear marketing communication.",
+    "ar": "بدأت العملية بدراسة طبيعة المنتج والعلامة التجارية والجمهور المستهدف، ثم تحديد الاتجاه البصري المناسب، واختيار الألوان والعناصر والتكوينات التي تخدم الفكرة. بعد ذلك، تم تطوير التصميم وتنفيذ التفاصيل البصرية، مع الاهتمام بالتوازن بين جاذبية المنتج ووضوح الرسالة التسويقية"
+  }
 }
