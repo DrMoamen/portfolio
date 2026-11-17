@@ -2,41 +2,47 @@
   "order": 1,
   "year": "2026",
   "title": {
-    "en": "Al Joud",
-    "ar": "الجود"
+    "en": "Branding & Brand Identity",
+    "ar": "بناء العلامة التجارية وهويتها"
   },
   "category": {
     "en": "Visual Identity & Branding",
     "ar": "الهوية البصرية والبراندينج"
   },
   "description": {
-    "en": "Al Joud is a women's fashion brand, and the objective was to create a logo that reflects elegance, femininity, and sophistication while establishing a distinctive visual presence that represents the brand's identity.\n\nThe design combines the beauty of Arabic calligraphy with fluid forms inspired by feminine silhouettes, creating a visual identity that blends artistic expression with the essence of women's fashion.",
-    "ar": "الجود علامة تجارية متخصصة في الملابس النسائية، وكان الهدف تصميم شعار يعكس الأناقة والأنوثة والرقي، ويمنح العلامة حضورًا بصريًا مميزًا يعبر عن طبيعة منتجاتها.\n\nاعتمد التصميم على المزج بين جمال الخط العربي والتكوينات الانسيابية المستوحاة من القوام الأنثوي، لتقديم هوية تجمع بين الطابع الفني والارتباط المباشر بعالم الأزياء النسائية."
+    "en": "A collection of creative projects focused on brand development and visual identity design, from conceptualizing brand personality to building cohesive visual systems that reflect each brand's vision and values while creating a distinctive and memorable presence",
+    "ar": "مجموعة من المشاريع الإبداعية المتخصصة في بناء العلامات التجارية وتصميم هوياتها البصرية، بدايةً من تطوير الفكرة والشخصية وصولًا إلى إنشاء نظام بصري متكامل يعكس رؤية العلامة التجارية وقيمها، ويساعدها على تكوين حضور مميز وقابل للتذكر"
   },
-  "cover": "/uploads/الجود للملابس النسائية.jpg",
+  "cover": "/uploads/Untitled Design (2).png",
   "images": [
-    "/uploads/الجود ديزاين 2 copy.jpg"
+    "/uploads/الجود ديزاين 2 copy.jpg",
+    "/uploads/الصياد بريزنتيشن.jpg",
+    "/uploads/Mockup 2.jpg",
+    "/uploads/Mockup 1.png",
+    "/uploads/المروة بريزنتيشن.jpg",
+    "/uploads/المروة.jpg",
+    "/uploads/العطية للاستثمار العقاري.jpg"
   ],
-  "client": "الجود للملابس النسائية",
+  "client": "Varios Clients",
   "role": {
     "en": "Design and Execution",
     "ar": "التصميم و التنفيذ"
   },
   "overview": {
-    "en": "A logo and visual identity design project for Al Joud, a women's fashion brand, aiming to establish a visual presence that reflects elegance, femininity, and sophistication.\n\nThe design combines the beauty of Arabic calligraphy with fluid forms inspired by feminine silhouettes, creating a distinctive logo that blends artistic expression with the contemporary spirit of fashion.",
-    "ar": "مشروع تصميم شعار وهوية بصرية لعلامة «الجود» المتخصصة في الملابس النسائية، بهدف بناء حضور بصري يعكس الأناقة والأنوثة والرقي.\n\nيرتكز التصميم على دمج جمال الخط العربي مع التكوينات الانسيابية المستوحاة من القوام الأنثوي، لتقديم شعار يجمع بين الهوية الفنية والطابع العصري لعالم الموضة."
+    "en": "This category focuses on building brands with distinctive personalities and cohesive visual identities by combining creative strategy with graphic design, transforming brand ideas into visual experiences that communicate consistently across different touchpoints.",
+    "ar": "يركز هذا المجال على بناء علامات تجارية تمتلك شخصية واضحة وهوية بصرية متماسكة، من خلال الجمع بين الاستراتيجية الإبداعية والتصميم الجرافيكي، وتحويل أفكار العلامات التجارية إلى تجارب بصرية تعبر عنها في مختلف نقاط التواصل."
   },
   "challenge": {
-    "en": "The main challenge was to create a logo that communicates femininity and elegance without relying on overused visual symbols commonly found in the women's fashion industry.\n\nThe design also required achieving a visual balance between emphasizing the brand name and expressing its business nature, while maintaining a distinctive composition that combines boldness with softness.",
-    "ar": "كان التحدي هو ابتكار شعار يعبر عن الأنوثة والأناقة دون الاعتماد على الرموز التقليدية المستهلكة في مجال الأزياء النسائية.\n\nكما تطلب الأمر إيجاد توازن بصري بين إبراز اسم العلامة التجارية، والتعبير عن طبيعة نشاطها، مع الحفاظ على تكوين مميز يجمع بين الجرأة والنعومة."
+    "en": "The challenge was to understand each brand's nature and identify what sets it apart from competitors, then translate its vision and message into a clear and distinctive visual language while balancing originality, creativity, and adaptability across different applications and platforms.",
+    "ar": "كان التحدي هو فهم طبيعة كل علامة تجارية وتحديد ما يميزها عن المنافسين، ثم ترجمة رؤيتها ورسالتها إلى لغة بصرية واضحة ومختلفة، مع تحقيق التوازن بين الأصالة والإبداع والقدرة على التكيف مع مختلف الاستخدامات والمنصات."
   },
   "concept": {
-    "en": "The creative concept was inspired by the relationship between women and fashion, using fluid curves and flowing lines that reflect feminine silhouettes and the movement of fabrics.\n\nArabic calligraphy was chosen as the primary visual element, complemented by feminine-inspired forms that create a visual dialogue between the brand name and its industry.\n\nThe idea was not simply to write the name Al Joud, but to transform it into a visual expression of femininity and elegance.",
-    "ar": "استُلهم المفهوم من العلاقة بين المرأة والأزياء، حيث تم توظيف الانحناءات والخطوط الانسيابية المستوحاة من القوام الأنثوي وحركة الأقمشة.\n\nجاءت الكتابة العربية لتكون العنصر الرئيسي في التكوين، مع دمج التشكيلات الأنثوية حولها لخلق حوار بصري بين اسم العلامة التجارية ومجالها.\n\nلم تكن الفكرة مجرد كتابة اسم الجود، بل تحويل الاسم إلى تعبير بصري عن الأنوثة والأناقة."
+    "en": "The concept is built around the idea that every brand has a story and personality worth expressing visually. The creative approach focuses on developing a visual language that captures the brand's essence, from its logo, colors, and typography to the graphic elements and patterns that create a distinctive and cohesive identity.",
+    "ar": "ينطلق المفهوم من أن كل علامة تجارية تمتلك قصة وشخصية تستحق أن تُروى بصريًا. لذلك، يعتمد العمل على ابتكار لغة تصميمية تعكس جوهر العلامة التجارية، بدايةً من الشعار والألوان والخطوط، وصولًا إلى العناصر والأنماط البصرية التي تمنحها هوية متفردة ومتناسقة."
   },
   "direction": {
-    "en": "The art direction focuses on a visual composition that combines Arabic calligraphy with fluid organic forms, emphasizing simplicity, balance, and contrast.\n\nArabic Typography: A custom Arabic lettering treatment gives the brand name a distinctive personality and strong visual presence.\n\nOrganic Shapes: Flowing curves and organic forms inspired by feminine silhouettes.\n\nColor Palette: Deep teal blue creates a sense of confidence and calmness, complemented by beige and cream tones for warmth and softness.\n\nVisual Balance: A balanced interaction between bold dark typography and delicate light-colored elements.",
-    "ar": "اعتمد الإخراج الفني على تكوين بصري يجمع بين الخط العربي والتشكيلات الانسيابية، مع التركيز على البساطة والتوازن والتباين.\n\nArabic Typography: معالجة اسم الجود بأسلوب خطي عربي حر يمنحه شخصية مميزة وحضورًا قويًا.\n\nOrganic Shapes: استخدام انحناءات وتكوينات انسيابية مستوحاة من القوام الأنثوي.\n\nColor Palette: اختيار الأزرق البترولي كلون أساسي يعكس الثقة والهدوء، مع درجات البيج والكريمي لإضافة الدفء والنعومة.\n\nVisual Balance: تحقيق التوازن بين الكتل الخطية الداكنة والعناصر الانسيابية الفاتحة."
+    "en": "Complete visual identity systems were developed to present brands in a professional and distinctive way, with a strong focus on visual details, consistency, and practical application. Deliverables included logo design, color systems, typography, graphic elements, stationery, packaging, digital brand applications, and brand guidelines where required.",
+    "ar": "تم تطوير هويات بصرية متكاملة تهدف إلى تقديم العلامات التجارية بصورة احترافية ومميزة، مع الاهتمام بالتفاصيل البصرية وتناسق العناصر وقابلية التطبيق. شملت المخرجات تصميم الشعارات، وأنظمة الألوان والخطوط، والعناصر الجرافيكية، والمطبوعات، وتطبيقات الهوية على المنتجات والتغليف والوسائط الرقمية، إلى جانب تصميم دليل الهوية البصرية عند الحاجة."
   },
   "process": {
     "en": "Research & Exploration: Understanding the brand's nature and exploring visual characteristics associated with women's fashion.\n\nConcept Development: Exploring the relationship between Arabic calligraphy and feminine-inspired forms.\n\nTypography Development: Creating a distinctive visual treatment for the Al Joud brand name.\n\nVisual Composition: Integrating typographic elements and flowing forms into one cohesive composition.\n\nColor Development: Exploring the contrast between deep teal blue and cream tones to establish a harmonious visual personality.\n\nFinal Artwork: Refining the final composition to bring together the brand name, visual symbol, and overall identity.",
