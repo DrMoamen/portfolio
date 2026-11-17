@@ -31,10 +31,7 @@
     "Advertising",
     "Print Design",
     "Event Branding",
-    "Creative Direction",
-    "Typography & Layout",
-    "Creative Concept Development",
-    "Marketing Materials"
+    "Creative Direction"
   ],
   "services": [
     {
@@ -73,73 +70,31 @@
         "en": "3 Years",
         "ar": "٣ سنوات"
       },
-      "dates": ""
+      "dates": "2023 - 2026"
     },
     {
       "company": "IRIS Marketing Agency",
       "role": {
         "en": "Senior Graphic Designer",
-        "ar": "مصمم جرافيك أول"
+        "ar": "مصمم جرافيك اول"
       },
       "duration": {
         "en": "2 Months",
         "ar": "شهران"
       },
-      "dates": ""
+      "dates": "April and May 2025"
     },
     {
       "company": "VIP Events",
       "role": {
-        "en": "Senior Graphic Designer",
-        "ar": "مصمم جرافيك أول"
+        "en": "Print Designer & Social Media Designer",
+        "ar": "مصمم مطبوعات و سوشيال ميديا"
       },
       "duration": {
-        "en": "Current",
-        "ar": "الحالي"
+        "en": "Current / Most Recent Role",
+        "ar": "الوظيفة الحالية / الأحدث"
       },
-      "dates": "Sep 2026 – Present"
-    }
-  ],
-  "stats": [
-    {
-      "value": 4,
-      "suffix": "+",
-      "label": {
-        "en": "Years of experience",
-        "ar": "سنين خبرة"
-      }
-    },
-    {
-      "value": 200,
-      "suffix": "+",
-      "label": {
-        "en": "Satisfied clients",
-        "ar": "عميل راضٍ"
-      }
-    },
-    {
-      "value": 50,
-      "suffix": "+",
-      "label": {
-        "en": "Campaigns",
-        "ar": "حملة إعلانية"
-      }
-    },
-    {
-      "value": 20,
-      "suffix": "+",
-      "label": {
-        "en": "Brands",
-        "ar": "علامة تجارية"
-      }
-    },
-    {
-      "value": 30,
-      "suffix": "+",
-      "label": {
-        "en": "Events branded",
-        "ar": "فعالية بهوية بصرية"
-      }
+      "dates": ""
     }
   ]
 }
