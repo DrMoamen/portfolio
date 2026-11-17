@@ -19,10 +19,10 @@
     "/uploads/pasted-image-1794840207508.png",
     "/uploads/pasted-image-1794840251442.png"
   ],
-  "client": "[Client]",
+  "client": "Helm Hayah Events",
   "role": {
-    "en": "[Your role]",
-    "ar": "[دورك]"
+    "en": "Designer and executor",
+    "ar": "مصمم و منفذ"
   },
   "overview": null,
   "challenge": null,
