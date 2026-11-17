@@ -1,5 +1,5 @@
 import {useEffect,useRef,useState,type ReactNode} from 'react'
-import {motion} from 'framer-motion'
+import {motion,animate,useInView} from 'framer-motion'
 import {ArrowRight,Menu,X} from 'lucide-react'
 import {site,projects,type Project} from './content'
 import {UI} from './ui'
@@ -11,6 +11,14 @@ function Img({src,alt='',cls='',onOpen}:{src?:string;alt?:string;cls?:string;onO
  const act=ok&&onOpen
  return <div className={`ph ${cls}${act?' zoom':''}`} data-l={`REPLACE · ${src||'add image in admin'}`} {...(act?{role:'button',tabIndex:0,'aria-label':'View full image',onClick:onOpen,onKeyDown:(e:{key:string})=>{if(e.key==='Enter')onOpen()}}:{})}>{ok&&<img src={src} alt={alt} loading="lazy" decoding="async" onError={()=>setOk(false)}/>}</div>}
 const Rv=({className='',children}:{className?:string;children:ReactNode})=><motion.div className={className} initial={{opacity:0,y:28}} whileInView={{opacity:1,y:0}} viewport={{once:true,amount:.12}} transition={{duration:.8,ease:[.2,.7,.2,1]}}>{children}</motion.div>
+function Count({to,suffix,L}:{to:number;suffix:string;L:Lang}){
+ const ref=useRef<HTMLSpanElement>(null),seen=useInView(ref,{once:true,amount:.6}),[v,setV]=useState(0)
+ useEffect(()=>{if(!seen)return
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches){setV(to);return}
+  const c=animate(0,to,{duration:1.8,ease:[.2,.7,.2,1],onUpdate:x=>setV(Math.round(x))})
+  return()=>c.stop()},[seen,to])
+ const f=(n:number)=>new Intl.NumberFormat(L==='ar'?'ar-EG':'en').format(n)
+ return <span ref={ref} className="num" aria-label={f(to)+suffix}><span aria-hidden="true">{f(v)}{suffix&&<i>{suffix}</i>}</span></span>}
 function Cursor(){
  const el=useRef<HTMLDivElement>(null)
  useEffect(()=>{if(!matchMedia('(hover:hover) and (pointer:fine)').matches)return
@@ -87,6 +95,7 @@ const short=(k:string,v:string)=>k==='email'||k==='whatsapp'?v:v.replace(/^https
      <p className="sub rise">{t.sub}</p>
 <div className="ctas rise r2"><a className="btn p" href="#work">{t.cta1} <Arrow/></a><a className="btn s" href="#contact">{t.cta2}</a><a className="btn s" href="/Mohamed-Momen-CV.pdf" download>{L==='ar'?'تحميل السيرة الذاتية':'DOWNLOAD CV'}</a></div></div>   </header>
    <div className="marq m" aria-hidden="true"><div>{(svc.join(' ✦ ')+' ✦ ').repeat(4)}</div></div>
+   {site.stats.length>0&&<section className="wrap stats" aria-label={t.stT}><div className="sg">{site.stats.map((x,i)=><div key={i} className="st"><Count to={x.value} suffix={x.suffix} L={L}/><p>{x.label[L]}</p></div>)}</div></section>}
    <section id="work" className="wrap"><div className="head"><h2>{t.workT}</h2><p className="m">({String(projects.length).padStart(2,'0')})</p></div>
     <div className="grid">{projects.map((p,i)=>
      <motion.a key={p.id} className="card in" href="#work" onClick={e=>{e.preventDefault();setCur(p.id)}} initial={{opacity:0,y:28}} whileInView={{opacity:1,y:0}} viewport={{once:true,amount:.12}} transition={{duration:.8,ease:[.2,.7,.2,1]}}>

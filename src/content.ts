@@ -12,6 +12,7 @@ const r:any=rawSite||{}
 export const site={photo:r.photo||'',
  contact:{email:r.contact?.email||'',whatsapp:r.contact?.whatsapp||'',behance:r.contact?.behance||'',instagram:r.contact?.instagram||'',linkedin:r.contact?.linkedin||''},
  about:{p1:bi(r.about?.p1),p2:bi(r.about?.p2),p3:bi(r.about?.p3)},
+ stats:(r.stats||[]).map((x:any)=>({value:Number(x?.value)||0,suffix:x?.suffix||'',label:bi(x?.label)})).filter((x:{value:number})=>x.value>0),
  skills:(r.skills||[]).map(str).filter(Boolean) as string[],
  services:(r.services||[]).map(bi) as Bi[],
  experience:(r.experience||[]).map((e:any)=>({company:e.company||'',role:bi(e.role),duration:bi(e.duration),dates:e.dates||''}))}
