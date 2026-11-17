@@ -85,8 +85,7 @@ const short=(k:string,v:string)=>k==='email'||k==='whatsapp'?v:v.replace(/^https
      <p className="m" style={{marginBottom:22}}>{t.label}</p>
      <Typewriter html={t.h1} lang={L} instant={typed} onDone={()=>setTyped(true)}/>
      <p className="sub rise">{t.sub}</p>
-     <div className="ctas rise r2"><a className="btn p" href="#work">{t.cta1} <Arrow/></a><a className="btn s" href="#contact">{t.cta2}</a></div></div>
-    <div className="comp rise r3" aria-hidden="true">{[0,1,2].map(i=><div key={i} className={`f ph${i===1?' o':''}`} data-l={`REPLACE · ${projects[i]?.cover||'hero image'}`}>{projects[i]?.cover&&<img src={projects[i].cover} alt=""/>}</div>)}<div className="bigmark"/></div>
+<div className="ctas rise r2"><a className="btn p" href="#work">{t.cta1} <Arrow/></a><a className="btn s" href="#contact">{t.cta2}</a><a className="btn s" href="/Mohamed-Momen-CV.pdf" download>{L==='ar'?'تحميل السيرة الذاتية':'DOWNLOAD CV'}</a></div>    <div className="comp rise r3" aria-hidden="true">{[0,1,2].map(i=><div key={i} className={`f ph${i===1?' o':''}`} data-l={`REPLACE · ${projects[i]?.cover||'hero image'}`}>{projects[i]?.cover&&<img src={projects[i].cover} alt=""/>}</div>)}<div className="bigmark"/></div>
    </header>
    <div className="marq m" aria-hidden="true"><div>{(svc.join(' ✦ ')+' ✦ ').repeat(4)}</div></div>
    <section id="work" className="wrap"><div className="head"><h2>{t.workT}</h2><p className="m">({String(projects.length).padStart(2,'0')})</p></div>
