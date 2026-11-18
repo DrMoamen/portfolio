@@ -17,9 +17,10 @@ function Cursor(){
  useEffect(()=>{if(!matchMedia('(hover:hover) and (pointer:fine)').matches)return
   let x=0,y=0,tx=0,ty=0,raf=0
   const mv=(e:PointerEvent)=>{tx=e.clientX;ty=e.clientY;el.current?.classList.toggle('big',!!(e.target as HTMLElement).closest('a,button'))}
-  const loop=()=>{x+=(tx-x)*.2;y+=(ty-y)*.2;if(el.current)el.current.style.transform=`translate(${x-7}px,${y-7}px)`;raf=requestAnimationFrame(loop)}
-  addEventListener('pointermove',mv);loop()
-  return()=>{removeEventListener('pointermove',mv);cancelAnimationFrame(raf)}},[])
+  const loop=()=>{x+=(tx-x)*.2;y+=(ty-y)*.2;if(el.current)el.current.style.transform=`translate(${x-7}px,${y-7}px)`;raf=Math.abs(tx-x)+Math.abs(ty-y)>.3?requestAnimationFrame(loop):0}
+  const mv2=(e:PointerEvent)=>{mv(e);if(!raf)raf=requestAnimationFrame(loop)}
+  addEventListener('pointermove',mv2);loop()
+  return()=>{removeEventListener('pointermove',mv2);cancelAnimationFrame(raf)}},[])
  return <div id="cur" ref={el}/>}
 function Case({id,L,onClose,onOpen}:{id:string|null;L:Lang;onClose:()=>void;onOpen:(id:string)=>void}){
  const t=UI[L],ref=useRef<HTMLDivElement>(null),last=useRef<Project>()
@@ -37,6 +38,8 @@ function Case({id,L,onClose,onOpen}:{id:string|null;L:Lang;onClose:()=>void;onOp
  useEffect(()=>{if(lb===null)return
   const k=(e:KeyboardEvent)=>{const f=L==='ar'?-1:1;if(e.key==='ArrowRight')step(f);if(e.key==='ArrowLeft')step(-f)}
   addEventListener('keydown',k);return()=>removeEventListener('keydown',k)},[lb===null,all.length,L])
+ useEffect(()=>{if(lb===null||all.length<2)return
+  ;[1,-1,2].forEach(d=>{const s=all[(lb+d+all.length)%all.length];if(s){const im=new Image();im.decoding='async';im.src=s}})},[lb,all.length])
  const gal:ReactNode[]=[]
  for(let j=0;j<imgs.length;j++){
   if(j%3===0)gal.push(<Img key={j} src={imgs[j]} cls="full" onOpen={open(imgs[j])}/>)
@@ -56,7 +59,7 @@ function Case({id,L,onClose,onOpen}:{id:string|null;L:Lang;onClose:()=>void;onOp
     <a key={r.id} href="#work" className="card in" style={{margin:0,gridColumn:'auto'}} onClick={e=>{e.preventDefault();onOpen(r.id)}}><Img src={r.cover} alt={r.title[L]}/><div className="meta"><h3 style={{fontSize:'1.2rem'}}>{r.title[L]}</h3></div><span className="m">{r.category[L]}</span></a>)}</div>
   </div>}</div>
  {lb!==null&&all[lb]&&<div className="lb" role="dialog" aria-modal="true" onClick={()=>setLb(null)}>
-  <img src={all[lb]} alt=""/>
+  <img key={lb} src={all[lb]} alt="" decoding="async"/>
   <button className="lbx" aria-label="Close" onClick={()=>setLb(null)}><X size={22}/></button>
   {all.length>1&&<><button className="lbn p" aria-label="Previous" onClick={e=>{e.stopPropagation();step(-1)}}>‹</button><button className="lbn n" aria-label="Next" onClick={e=>{e.stopPropagation();step(1)}}>›</button></>}
   <span className="m lbc">{lb+1} / {all.length}</span></div>}
